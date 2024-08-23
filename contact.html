@@ -3,25 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technology Solutioner - Contact Us</title>
-    <link rel="stylesheet" href="./contact.css">
+    <title>Advanced Navbar</title>
+    <link rel="stylesheet" href="./stylesheet/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <div class="container">
-                <h1 class="logo">Technology Solutioner</h1>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <div class="menu-toggle">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
+            <div class="logo">
+                <img src="./pics/logo-3.png" alt="">
+               
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="./services.html" class="dropbtn">Services</a>
+                    <div class="dropdown-content">
+                        <a href="#">Web Development</a>
+                        
+                        
+                    </div>
+                </li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                ☰
             </div>
         </nav>
     </header>
@@ -36,15 +43,15 @@
                         <p>If you have any questions or need further information, feel free to contact us using the form below or reach out through our social media channels.</p>
                         <div class="info-item">
                             <i class="fa fa-map-marker"></i>
-                            <p>123 Tech Street, Silicon Valley, CA</p>
+                            <p>adress</p>
                         </div>
                         <div class="info-item">
                             <i class="fa fa-phone"></i>
-                            <p>(123) 456-7890</p>
+                            <p>+92 315 2430679</p>
                         </div>
                         <div class="info-item">
                             <i class="fa fa-envelope"></i>
-                            <p>info@technology-solutioner.com</p>
+                            <p>anushassan633@gmail.com</p>
                         </div>
                     </div>
 
@@ -99,6 +106,6 @@
         </div>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="./javascript/conjava.js"></script>
 </body>
 </html>
