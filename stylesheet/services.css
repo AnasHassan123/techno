@@ -215,6 +215,12 @@ footer {
 .content {
     width: 100%;
 }
+.service-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 }
 /* Animations and Transitions */
 @keyframes fadeIn {
