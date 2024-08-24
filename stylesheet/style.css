@@ -144,8 +144,8 @@ header {
     gap: 30px;
 } */
 .info-section{
-
-    background-color: rgb(189, 184, 178);
+   background-image: url("../pics/display.jpg");
+    /* background-color: rgb(189, 184, 178); */
     width: 100%;
     height: 400px;
     /* opacity: 14; */
@@ -157,7 +157,7 @@ header {
     flex-direction: column;
     font-size: 20px;
     gap: 30px;
-    color: #080808;
+    color: #f9f8f8;
 }
 .box-black{
     width: 100%;
@@ -285,6 +285,123 @@ header {
 }
 .txt-1 h1{
     font-size: 15px;
+}
+.container-0{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    gap: 30px;
+}
+.team-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 30%;
+}
+
+.team-section h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.team-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.arrow-button {
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.5em;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.arrow-button:hover {
+    background-color: #0056b3;
+}
+
+.team-members {
+    display: flex;
+    gap: 20px;
+    /* overflow-x: auto; */
+    padding-right: 15px;
+}
+
+.member-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    flex: 0 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+    transform: scale(1.05);
+}
+
+.member-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.member-info {
+    padding: 10px;
+}
+
+.member-info p {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+/* Font Awesome icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+.facebook-icon::before {
+    content: '\f09a';
+    font-family: 'Font Awesome 5 Free';
+}
+
+.whatsapp-icon::before {
+    content: '\f232';
+    font-family: 'Font Awesome 5 Free';
 }
 .sec-3{
    width: 100%;
@@ -464,6 +581,31 @@ header {
     gap: 10px;
     min-height: 300vh;
 }
+.container-0{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 180vh;
+    gap: 30px;
+    flex-direction: column;
+}
+.team-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    /* width: 30%; */
+}
+.team-members {
+    display: flex;
+    gap: 20px;
+    /* overflow-x: auto; */
+    /* padding-right: 15px; */
+    flex-direction: column;
+}
+
 .sec-3{
     font-size: 15px;
     display: flex;

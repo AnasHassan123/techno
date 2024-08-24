@@ -29,4 +29,28 @@ document.getElementById('menuToggle').addEventListener('click', function () {
 
     this.classList.toggle('active');
 });
+// JavaScript code to handle the button click events
+document.addEventListener('DOMContentLoaded', () => {
+    const leftButton = document.querySelector('.arrow-button.left');
+    const rightButton = document.querySelector('.arrow-button.right');
+    const teamMembers = document.querySelector('.team-members');
+    
+    let scrollAmount = 0;
+
+    leftButton.addEventListener('click', () => {
+        scrollAmount -= 200;
+        teamMembers.scrollTo({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+
+    rightButton.addEventListener('click', () => {
+        scrollAmount += 200;
+        teamMembers.scrollTo({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+});
 
